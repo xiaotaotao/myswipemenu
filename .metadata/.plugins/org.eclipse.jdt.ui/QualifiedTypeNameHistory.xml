@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="com.zzt.myswipemenu.R"/>
+<fullyQualifiedTypeName name="myswipemenu.ZztSwpieMenu"/>
+<fullyQualifiedTypeName name="com.zzt.myswipemenu.ZztSwipeMenuAdapter"/>
+<fullyQualifiedTypeName name="android.view.View.OnDragListener"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.support.v4.widget.ViewDragHelper"/>
+<fullyQualifiedTypeName name="android.support.v4.widget.ViewDragHelper.Callback"/>
+<fullyQualifiedTypeName name="android.support.v4.view.MotionEventCompat"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewCompat"/>
+<fullyQualifiedTypeName name="android.view.GestureDetector"/>
+<fullyQualifiedTypeName name="android.view.ViewParent"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView"/>
+<fullyQualifiedTypeName name="android.view.MotionEvent"/>
+<fullyQualifiedTypeName name="android.view.View.OnTouchListener"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.graphics.Rect"/>
+<fullyQualifiedTypeName name="com.zzt.myswipemenu.ZztSwipeLayout"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.widget.Adapter"/>
+<fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="android.widget.ListAdapter"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="myswipemenu.mainactivity"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.zzt.swipemenu.ZztSwipeLayout.ZztSwipeStatus"/>
+<fullyQualifiedTypeName name="com.zzt.myswipemenu.R.layout"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.zzt.myswipemenu.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.zzt.swipemenu.ZztSwipeLayout"/>
+<fullyQualifiedTypeName name="com.zzt.swipemenu.ZztSwipeAdapter"/>
+</qualifiedTypeNameHistroy>

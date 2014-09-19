@@ -1,0 +1,73 @@
+package com.zzt.swipemenu;
+
+import java.util.List;
+
+import myswipemenu.mainactivity;
+
+import com.zzt.myswipemenu.R;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public abstract class ZztSwipeAdapter extends BaseAdapter {
+
+	private int mOpenPosition;
+	private LayoutInflater inflater;
+	private View mOpenconvertView;
+	
+	public abstract int getZztSwipeLayoutId(int position);
+	public abstract int getItemLayoutId(int position);
+	public abstract List<View> getViewHolder(View convertView, int position);
+	public abstract void fillValues(ViewHolder viewHolder, int position);
+	
+	public ZztSwipeAdapter(Context context){
+		inflater = LayoutInflater.from(context);
+	}
+	
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		//ZztSwipeAdapterStatus status = new ZztSwipeAdapterStatus(position);
+		ViewHolder viewHolder;
+		ZztSwipeLayout swipe;
+		if(convertView==null){
+			convertView= inflater.inflate(this.getItemLayoutId(position), null);
+			swipe = (ZztSwipeLayout)convertView.findViewById(this.getZztSwipeLayoutId(position));
+			if(swipe!=null){
+				swipe.addZztSwipeStatusInterface(new ZztSwipeAdapterStatusListener(position));				
+			}
+			viewHolder = new ViewHolder();
+			viewHolder.position = position;
+			viewHolder.viewHolder = this.getViewHolder(convertView, position);
+			convertView.setTag(viewHolder);			
+		}else{
+			viewHolder = (ViewHolder)convertView.getTag();	
+			swipe = (ZztSwipeLayout)convertView.findViewById(this.getZztSwipeLayoutId(position));
+			if(swipe!=null){
+				swipe.addZztSwipeStatusInterface(new ZztSwipeAdapterStatusListener(position));				
+			}			
+		}		
+		this.fillValues(viewHolder, position);		
+		if(mOpenPosition==position){
+		}
+		return convertView;
+	}
+	
+	class ZztSwipeAdapterStatusListener implements ZztSwipeLayout.ZztSwipeStatusListener{
+		
+		private int mposition;
+		public ZztSwipeAdapterStatusListener(int position){
+			this.mposition = position;
+		}
+		@Override
+		public void onOpen() {
+			ZztSwipeAdapter.this.mOpenPosition    = this.mposition;
+		}		
+	}
+	public class ViewHolder{
+		public List<View> viewHolder = null;
+		int position = 0;
+	}
+}
